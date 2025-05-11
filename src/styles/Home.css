@@ -1,0 +1,45 @@
+:root {
+  --highlight-color: #64ffda; 
+}
+
+.texto-home  {
+  margin-top: 80px;
+  margin-right: 20px; 
+  align-items: center;
+}
+
+.ola {
+  color: var(--highlight-color);
+}
+
+.ola, .sobre {
+  margin: 0;
+  padding: 5px 0;
+}
+.ola, .sobre, .nome{
+ display: inline-block;
+}
+.nome{
+    font-family: 'Roboto', sans-serif;
+    max-width: 100%;
+    font-size: 80px;
+    width: fit-content;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid;
+    animation:
+        typing 2s steps(11),
+        curso .4s step-end infinite alternate;
+}
+.home-section {
+  width: 100%;
+  display: flex;
+  align-items: center;   
+  justify-content: center;
+  padding: 20px;
+  
+}
+.sobre{
+    color:rgba(255, 255, 255, 0.6);
+}

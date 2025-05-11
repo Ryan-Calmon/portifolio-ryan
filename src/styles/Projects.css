@@ -1,0 +1,11 @@
+.texto-sobre{
+    margin-top:16px;
+    margin-bottom: 45px;
+}
+.projetos-container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 20px;
+    gap:50px;
+}

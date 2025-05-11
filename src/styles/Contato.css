@@ -1,0 +1,30 @@
+.redes-lista {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(140px, 200px));
+    gap: 0px 10px;
+    padding: 0px;
+    margin: 20px 0px 0px;
+    overflow: visible; 
+    list-style: none;
+}
+
+.redes-lista li {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    overflow: visible; 
+    display: flex;
+    justify-content: center;
+}
+
+.redes-lista li::before {
+    content: "";
+}
+
+.social-media {
+    width: 60px;
+    transition: all 0.3s ease;
+}
+
+.social-media:hover {
+    transform: scale(1.2);
+}

@@ -1,0 +1,59 @@
+import React from "react";
+import { Link } from 'react-router-dom';
+import '../styles/Header.css'; 
+
+function Header() {
+    return (
+    <header className="header">
+      <div className="container-fluid">
+        <div className="row">
+              <div className="col-6">
+                  <div className="logo-container">
+                    <svg id="logo" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 84 96" width="50" height="50">
+                      <title>Logo</title>
+                       <a href="#home" rel="noopener noreferrer"> 
+                      <g transform="translate(-8.000000, -2.000000)">
+                        <g transform="translate(11.000000, 5.000000)">
+                          <polygon
+                            id="Shape"
+                            stroke="#64ffda"
+                            strokeWidth="5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            points="39 0 0 22 0 67 39 90 78 68 78 23"
+                            fill="none"
+                          />
+                          <text x="38" y="45" dominant-baseline="middle" text-anchor="middle" font-size="30" fill="#64ffda">R</text> {/* Cor do R igual ao contorno */}
+                        </g>
+                      </g>
+                      </a>
+                    </svg>
+                </div>
+          </div>
+             <div className="col-6">
+              <div className="navbar">
+             <nav className="nav">
+            <ul>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+                   </nav>
+                   <a
+                    className="btn-curriculo"
+                    href="/Curriculum.pdf"
+                    target="_blank"
+                     rel="noopener noreferrer"
+                      >
+                      Currículo
+                    </a>
+
+              </div>
+              </div>
+        </div>           
+      </div>
+    </header>
+  );
+}
+
+export default Header;
