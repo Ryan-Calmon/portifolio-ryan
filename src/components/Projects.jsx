@@ -12,7 +12,7 @@ const Projects = () => {
     <section id="projects" className="about-section">
        <div className="container-fluid">
         <div className="row">
-         <h2 class="numbered-heading">Projetos</h2>
+         <h2 className="numbered-heading">Projetos</h2>
          <p className="texto-sobre"> Aqui estão os meus projetos mais recentes!</p>
          </div>
           <div className="projetos-container">

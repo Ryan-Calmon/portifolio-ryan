@@ -23,7 +23,7 @@ function Header() {
                             points="39 0 0 22 0 67 39 90 78 68 78 23"
                             fill="none"
                           />
-                          <text x="38" y="45" dominant-baseline="middle" text-anchor="middle" font-size="30" fill="#64ffda">R</text> {/* Cor do R igual ao contorno */}
+                          <text x="38" y="45" dominantBaseline="middle" textAnchor="middle" fontSize="30" fill="#64ffda">R</text> {/* Cor do R igual ao contorno */}
                         </g>
                       </g>
                       </a>

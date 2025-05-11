@@ -11,12 +11,12 @@ const About = () => {
        <div className="container-fluid">
         <div className="row">
           <div className="col-6">
-        <h2 class="numbered-heading">Sobre mim</h2>
-        <p class="texto-sobre">Prazer, Ryan! Meu interesse por programação começou  em 2016, quando comecei a criar mods para jogos. Desde então, venho expandindo meus conhecimentos e habilidades.
+        <h2 className="numbered-heading">Sobre mim</h2>
+        <p className="texto-sobre">Prazer, Ryan! Meu interesse por programação começou  em 2016, quando comecei a criar mods para jogos. Desde então, venho expandindo meus conhecimentos e habilidades.
 Atualmente, estou focado em desenvolver projetos de front-end e back-end, sempre buscando aprender mais. Também tenho um interesse crescente por Banco de Dados e Cibersegurança, áreas que quero explorar mais.
 </p>
-        <p class="habilidades">Algumas das tecnologias que eu estou utilizando recentemente:</p>
-        <ul class="habilidades-lista">
+        <p className="habilidades">Algumas das tecnologias que eu estou utilizando recentemente:</p>
+        <ul className="habilidades-lista">
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
