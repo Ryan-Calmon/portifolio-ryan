@@ -1,6 +1,5 @@
 // src/components/About.jsx
 import React from 'react';
-import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import '../styles/About.css'; 
 import eu from "../images/Eu.jpeg";
 

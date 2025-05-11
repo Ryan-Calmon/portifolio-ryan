@@ -1,7 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"; 
 import "../styles/CardProjetos.css";
-import eu from "../images/Eu.jpeg"; 
 import github from "../images/github.png";
 
 function CardProjetos({ imagem, titulo, descricao, linkGit }) {

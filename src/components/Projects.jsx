@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import CardProjetos from './CardProjetos';
 import '../styles/Projects.css';
 import ryanportifolio from '../images/ryanportifolio.png';

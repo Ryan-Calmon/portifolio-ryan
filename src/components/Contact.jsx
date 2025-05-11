@@ -1,5 +1,4 @@
 import React from 'react';
-import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import '../styles/Contato.css';
 import linkedin from "../images/linkedin.png";
 import github from "../images/github.png";
