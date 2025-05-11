@@ -19,7 +19,7 @@ const Projects = () => {
                 imagem={ryanportifolio}
                 titulo ="v1-portifolio"
                 descricao="Construir esse portifólio me rendeu muitos ensinamentos, principalmente com hooks e animações."
-                linkGit={"https://github.com/Ryan-Calmon/v1-portifolio"} />
+                linkGit={"https://github.com/Ryan-Calmon/portifolio-ryan"} />
                 <CardProjetos imagem={cifrafacil}
                 titulo ="Cifra Fácil"
                  descricao="O projeto que me inseriu ao desenvolvimento Web."
