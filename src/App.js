@@ -20,16 +20,19 @@ function App() {
   }, []);
 
   useEffect(() => {
+      if (!isLoading) {
     const light = document.getElementById('cursor-light');
     const handleMouseMove = (e) => {
       if (light) {
         light.style.left = `${e.clientX}px`;
         light.style.top = `${e.clientY}px`;
       }
+   
     };
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
+     }
+  }, [isLoading]);
 
   return (
      <>

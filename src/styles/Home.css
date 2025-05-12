@@ -24,7 +24,6 @@
 }
 .nome{
     font-family: 'Roboto', sans-serif;
-    max-width: 100%;
     font-size: 80px;
     width: fit-content;
     display: inline-block;
