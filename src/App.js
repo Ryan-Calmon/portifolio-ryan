@@ -1,12 +1,24 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import LoadingScreen from './components/LoadingScreen'; // <- use esse
 import './App.css';
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // dura 2.4s antes de esconder
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+    return () => clearTimeout(timeout);
+  }, []);
+
   useEffect(() => {
     const light = document.getElementById('cursor-light');
     const handleMouseMove = (e) => {
@@ -20,17 +32,25 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <div id="cursor-light" />
-      
-      <Header />
-      <div className="container">
-        <Home />
-        <About />
-        <Projects />
-        <Contact />
-      </div>
-    </div>
+     <>
+      <LoadingScreen isLoading={isLoading} />
+      {!isLoading && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <div id="cursor-light" />
+          <Header />
+          <div className="container">
+            <Home />
+            <About />
+            <Projects />
+            <Contact />
+          </div>
+        </motion.div>
+      )}
+    </>
   );
 }
 

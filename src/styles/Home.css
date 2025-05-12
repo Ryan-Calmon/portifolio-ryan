@@ -19,6 +19,9 @@
 .ola, .sobre, .nome{
  display: inline-block;
 }
+.sobre{
+  width: 550px;
+}
 .nome{
     font-family: 'Roboto', sans-serif;
     max-width: 100%;
@@ -42,4 +45,24 @@
 }
 .sobre{
     color:rgba(255, 255, 255, 0.6);
+}
+@keyframes cursor{
+    50%{ border-color:transparent;}
+}
+@keyframes typing{
+    from{ width: 0;}
+    to{ width:45%;}
+}
+@media screen and (max-width: 800px) {
+  .nome{
+    font-size: 40px;
+  }
+  .sobre{
+    font-size: 14px;
+   width: fit-content;
+  }
+@keyframes typing{
+    from{ width: 0;}
+    to{ width:100%;}
+}
 }

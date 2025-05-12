@@ -9,16 +9,19 @@ html {
 body {
   background-color: #0a192f;
 }
-
+.R-logo{
+  text-decoration: none;
+}
 .header {
-  margin-top: 20px;
-    position: sticky;
+  padding-top:20px;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 999;
    backdrop-filter: blur(10px);
   background-color: rgba(10,25,47,.06);
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: visible;
 }
 
 
@@ -27,7 +30,7 @@ body {
   align-items: center;
   padding: 10px;
   height: 80px;
-  padding-left: 120px;
+  justify-content: center;
 }
 
 .navbar {
@@ -102,3 +105,4 @@ body {
   transform: translate(2px, 2px); 
   box-shadow: none; 
 }
+

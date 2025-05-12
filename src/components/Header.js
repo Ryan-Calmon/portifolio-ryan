@@ -1,17 +1,19 @@
 import React from "react";
-
 import '../styles/Header.css'; 
+import MenuMobile from "./MenuMobile";
 
 function Header() {
+  
     return (
     <header className="header">
       <div className="container-fluid">
         <div className="row">
-              <div className="col-6">
+              <div className="col-3">
                   <div className="logo-container">
+                      <a href="#home" rel="noopener noreferrer"> 
                     <svg id="logo" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 84 96" width="50" height="50">
                       <title>Logo</title>
-                       <a href="#home" rel="noopener noreferrer"> 
+                     
                       <g transform="translate(-8.000000, -2.000000)">
                         <g transform="translate(11.000000, 5.000000)">
                           <polygon
@@ -23,14 +25,18 @@ function Header() {
                             points="39 0 0 22 0 67 39 90 78 68 78 23"
                             fill="none"
                           />
-                          <text x="38" y="45" dominantBaseline="middle" textAnchor="middle" fontSize="30" fill="#64ffda">R</text> {/* Cor do R igual ao contorno */}
+                          <text className="R-logo" x="38" y="45" dominantBaseline="middle" textAnchor="middle" fontSize="30" fill="#64ffda">R</text>
                         </g>
                       </g>
-                      </a>
+                     
                     </svg>
+                     </a>
                 </div>
           </div>
-             <div className="col-6">
+          <div className="col-6 col-lg-3">
+
+          </div>
+             <div className="col-6 d-lg-block d-none ">
               <div className="navbar">
              <nav className="nav">
             <ul>
@@ -50,8 +56,14 @@ function Header() {
 
               </div>
               </div>
+             <div className="col-3 d-block d-lg-none">
+              <div className="menuContainer">
+              <MenuMobile />
+             </div>
+             </div>
         </div>           
       </div>
+  
     </header>
   );
 }

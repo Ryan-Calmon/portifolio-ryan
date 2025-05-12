@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/Contato.css';
 import linkedin from "../images/linkedin.png";
 import github from "../images/github.png";
 import email from "../images/email.png";
 
-const RedesSociais = () => {
+function RedesSociais() {
+  const [copied, setCopied] = useState(false);
+  const emailAddress = 'ryan@calmon.net.br';
+
+  function handleEmailClick() {
+    navigator.clipboard.writeText(emailAddress);
+    window.location.href = `mailto:${emailAddress}`;
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  }
+
   return (
     <div className="section hidden">
       <section id="contact" className="about-section">
@@ -22,10 +32,11 @@ const RedesSociais = () => {
                   <img className="social-media" src={github} alt="GitHub" />
                 </a>
               </li>
-              <li>
-                <a href="mailto:ryan@calmon.net.br">
+              <li className="email-wrapper">
+                <button onClick={handleEmailClick} className="email-btn">
                   <img className="social-media" src={email} alt="E-mail" />
-                </a>
+                </button>
+                {copied && <span className="copied-toast">Copiado!</span>}
               </li>
             </ul>
           </div>
@@ -33,6 +44,6 @@ const RedesSociais = () => {
       </section>
     </div>
   );
-};
+}
 
 export default RedesSociais;

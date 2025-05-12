@@ -1,0 +1,22 @@
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0a192f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+.logo-wrapper svg {
+  width: 80px;
+  height: 80px;
+}
+
+.loading-screen.exit {
+  transform: translateY(-100%);
+}
+

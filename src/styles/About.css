@@ -3,13 +3,10 @@
   --highlight-color-rgb: 100, 255, 218; 
 }
 .imagem-home {
+  width: 100%;
+  max-width: 300px;
+  margin: 70px auto 0 auto;
   position: relative;
-  width: 300px; 
-  height: 300px; 
-  margin-left:150px
-}
-.imagem-home{
-    margin-top: 70px;
 }
 .imagem-home svg {
   position: absolute;
@@ -44,12 +41,14 @@
       filter: grayscale(0%) contrast(100%) sepia(20%) hue-rotate(0deg);
 }
 .overlay-wrapper {
-  position: relative;
-  width: 300px;
-  height: 300px;
+    position: relative;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   border-radius: 8px;
   overflow: hidden;
   transition: all 0.3s ease;
+  display: block;
 }
 
 .overlay-wrapper img {
@@ -65,17 +64,14 @@
  filter: grayscale(0%) contrast(1);
 } 
 #about .color-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(var(--highlight-color-rgb),0.3);
+ position: absolute;
+  inset: 0;
+  background-color: rgba(var(--highlight-color-rgb), 0.3);
   z-index: 1;
   opacity: 1;
-  transition: opacity 0.15s ease-in-out;
-  border-radius: 5%;
-      pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+  pointer-events: none;
+  border-radius: inherit;
 }
 .overlay-wrapper img {
   position: relative;
@@ -96,15 +92,17 @@
 .texto-sobre{
   color:rgba(255,255,255,0.6);
   font-family: "Roboto", sans-serif;
-  width: 500px;
+  width: fit-content;
   font-size: 18px;
   margin-top:70px;
   margin-bottom: 10px;
+  text-align: justify;
+  max-width: 500px;
 }
 .habilidades{
   color:rgba(255,255,255,0.6);
   font-family: "Roboto", sans-serif;
-  width: 500px;
+  width: fit-content;
   font-size: 18px;
 }
 .habilidades-lista {
@@ -132,10 +130,8 @@
     font-family: 'Martian Mono', sans-serif;
     color: rgba(255, 255, 255, 0.6);
 }
-@keyframes cursor{
-    50%{ border-color:transparent;}
+@media screen and (max-width: 800px) {
+.imagem-home{
+  margin-left: 0;
 }
-@keyframes typing{
-    from{ width: 0;}
-    to{ width:45%;}
 }

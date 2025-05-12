@@ -1,7 +1,7 @@
 
 .card {
-
-  width: 330px;
+  width: fit-content;
+  max-width: 330px;
   height: 500px;
   background-color: #122b52; 
   border: none;
@@ -96,5 +96,14 @@
 }
 .card:hover .color-overlay{
   opacity: 0;
+
+}
+.projetos-container{
+  width: 100%;
+}
+@media screen and (max-width: 1250px) {
+  .bagulho-foto, .bagulho-foto2{
+    display: none;
+  }
 
 }
