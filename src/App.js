@@ -5,7 +5,8 @@ import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import LoadingScreen from './components/LoadingScreen'; // <- use esse
+import LoadingScreen from './components/LoadingScreen';
+import Particles from './components/Particles'; // <- use esse
 import './App.css';
 
 function App() {
@@ -50,9 +51,23 @@ function App() {
             <About />
             <Projects />
             <Contact />
+              <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+       <Particles
+    particleColors={['#ffffff', '#ffffff']}
+    particleCount={200}
+    particleSpread={10}
+    speed={0.1}
+    particleBaseSize={100}
+    moveParticlesOnHover={true}
+    alphaParticles={false}
+    disableRotation={false}
+  />
+</div>
           </div>
         </motion.div>
+        
       )}
+    
     </>
   );
 }
