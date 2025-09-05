@@ -21,8 +21,8 @@ const Projects = () => {
               <div className="col col-lg-4 mb-4">
                 <CardProjetos 
                 imagem={ryanportifolio}
-                titulo ="v1-portifolio"
-                descricao="Construir esse portifólio me rendeu muitos ensinamentos, principalmente com hooks e animações."
+                titulo ="v1-portfolio"
+                descricao="Construir esse portfólio me rendeu muitos ensinamentos, principalmente com hooks e animações."
                 linkGit={"https://github.com/Ryan-Calmon/portifolio-ryan"} />
                 </div>
                 <div className="col col-lg-4 mb-4">
