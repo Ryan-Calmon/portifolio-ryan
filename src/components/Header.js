@@ -47,7 +47,7 @@ function Header() {
                    </nav>
                    <a
                     className="btn-curriculo"
-                    href="/Currículo-Ryan-Calmon.pdf"
+                    href="/Currículo_Ryan_Calmon.pdf"
                     target="_blank"
                      rel="noopener noreferrer"
                       >
